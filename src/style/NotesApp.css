@@ -1,3 +1,7 @@
 * {
-  font-family: 'roboto', arial, helvet;
+  font-family: 'Roboto', arial, helvet;
+}
+
+body {
+  padding: 20px;
 }

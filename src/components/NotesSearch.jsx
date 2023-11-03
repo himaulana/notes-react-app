@@ -21,15 +21,15 @@ export default class NotesSearch extends React.Component {
 
   render() {
     return (
-      <>
-        <label htmlFor="title">Cari NOTE</label>
+      <div>
         <input
           type="text"
           name="query"
           value={this.state.query}
+          placeholder="Search your note..."
           onChange={this.onSearchChangeHandler}
         />
-      </>
+      </div>
     );
   }
 }

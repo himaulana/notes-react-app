@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px) {
+  .notes-list {
+    display: block;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .notes-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 30px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .notes-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 30px;
+  }
+}

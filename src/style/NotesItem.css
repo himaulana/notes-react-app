@@ -1,0 +1,102 @@
+/* Note Item Container */
+.note-item__container {
+  background-color: #fff;
+  color: #768492;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 15px 20px 4px 20px;
+  margin: 10px;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: justify;
+  outline: 0.8px dashed red;
+  margin-bottom: 20px;
+}
+
+.note-item__container hr {
+  border: 1px solid #87c4ff;
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.note-item__container:hover hr {
+  transform: translateY(-10px);
+}
+
+.note-item__container:hover {
+  background-color: #e0f4ff;
+}
+
+/* Note Item Title */
+.note-item__container h2 {
+  font-family: 'Jost', sans-serif;
+}
+
+/* Note Item Body */
+.note-item__body {
+  height: 6em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.note-item__body:hover {
+  color: #0f1111;
+}
+
+/* Note Item Footer */
+.note-item__footer {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Buttons within Note Item */
+.note-item__footer .buttons {
+  margin-top: 10px;
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.note-item__footer .buttons button {
+  margin-right: 10px;
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 29px;
+  padding: 0 11px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+  font-weight: 700;
+}
+
+.note-item__footer .buttons button:hover {
+  background-color: #f7fafa;
+}
+
+.note-item__footer .buttons button:focus {
+  border-color: #008296;
+  box-shadow: 0 2px 5px 0 rgba(213, 217, 217, 0.5);
+  outline: 0;
+}
+
+/* Date within Note Item */
+.note-item__footer .date {
+  line-height: 26px;
+  text-transform: capitalize;
+}

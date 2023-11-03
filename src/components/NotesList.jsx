@@ -1,9 +1,10 @@
-import NotesInput from './NotesInput';
 import NotesItem from './NotesItem';
+
+import '../style/NotesList.css';
 
 export default function NotesList({ notes, onDelete, onArchived }) {
   return (
-    <>
+    <div className="notes-list">
       {notes.map((note) => (
         <NotesItem
           key={note.id}
@@ -12,6 +13,6 @@ export default function NotesList({ notes, onDelete, onArchived }) {
           onArchived={onArchived}
         />
       ))}
-    </>
+    </div>
   );
 }

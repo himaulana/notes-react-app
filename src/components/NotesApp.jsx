@@ -4,6 +4,8 @@ import NotesInput from './NotesInput';
 import { getData, showFormattedDate } from '../database/source';
 import NotesSearch from './NotesSearch';
 
+import '../style/NotesApp.css';
+
 export default class NotesApp extends React.Component {
   constructor(props) {
     super(props);

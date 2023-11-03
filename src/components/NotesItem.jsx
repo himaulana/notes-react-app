@@ -1,6 +1,4 @@
-import ItemBody from './ItemBody';
-import ItemFooter from './ItemFooter';
-import ItemTitle from './ItemTitle';
+import '../style/NotesItem.css';
 
 export default function NotesItem({
   id,
@@ -12,16 +10,21 @@ export default function NotesItem({
   onArchived,
 }) {
   return (
-    <div>
-      <ItemTitle title={title} />
-      <ItemBody body={body} />
-      <ItemFooter
-        id={id}
-        archived={archived}
-        date={createdAt}
-        onDelete={onDelete}
-        onArchived={onArchived}
-      />
+    <div className="note-item__container">
+      <h2>{title}</h2>
+      <div className="note-item__body">
+        <p>{body}</p>
+      </div>
+      <div className="note-item__footer">
+        <div className="buttons">
+          <button onClick={() => onDelete(id)}>Delete</button>
+          <button onClick={() => onArchived(id)}>
+            {archived !== true ? 'Archived' : 'Back'}
+          </button>
+        </div>
+        <p className="date">{createdAt}</p>
+      </div>
+      <hr />
     </div>
   );
 }
